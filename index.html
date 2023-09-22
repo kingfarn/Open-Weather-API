@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Weather Erbil </title>
+    <link rel="icon" type="image/png" style="border-radius: 10px;" href="images/weather.png">
+
+    <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css" />
+    <script src="https://unpkg.com/htmx.org@1.6.0/dist/htmx.js"></script>
+    <script src="script.js"></script>
+
+</head>
+
+<body>
+
+    <div class="flex flex-col h-screen bg-gradient-to-r from-blue-500 to-blue-700">
+
+        <div class="flex flex-col items-center p-6 space-y-4 w-500 mx-auto">
+
+            <h1 class="text-2xl font-semibold text-white" id="current-city">
+
+            </h1>
+
+            <p class="text-sm text-gray-200" id="current-date">
+
+            </p>
+
+            <div class="flex flex-col items-center space-y-2">
+
+                <svg class="h-20 w-20 text-gray-300" fill="none" height="24" stroke="currentColor"
+                    stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24" width="24"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"></path>
+                </svg>
+
+                <p id="current-temperature" class="text-6xl font-bold text-white">
+
+                </p>
+
+                <p id="current-description" class="text-xl text-gray-300">
+
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <div class="flex overflow-x-auto space-x-6 p-6 w-500 mx-auto" id="forecast-section">
+
+        </div>
+
+    </div>
+</body>
+
+</html>
